@@ -6,9 +6,13 @@ public class Pracitce02 {
 		WhileTest whileTest= new WhileTest();
 
 
+		boolean ret1 = false;
+		boolean ret2 = false;
 		do {
 			System.out.println("メインdoから出力");
-		}while(!(whileTest.test() == true)&&!(whileTest.test2() == true)) ;
+			ret1 = whileTest.test();
+			ret2 = whileTest.test2();
+		}while(!ret1 && !ret2) ;
 
 	}
 }
